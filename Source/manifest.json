@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Altcoin to Shitcoin Plus",
+	"version": "1.0",
+  "description": "Chrome extension that replaces occurrences of altcoins with 'shitcoin' plus their marketcap number.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
