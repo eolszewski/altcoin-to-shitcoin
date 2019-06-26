@@ -19,6 +19,12 @@ function handleText(textNode) {
 }
 
 function replaceText(v) {
+
+  v = v.replace(/\bETC\b/g, "Shitcoin #16");
+  v = v.replace(/\bEthereum Classic\b/g, "Shitcoin #16");
+  v = v.replace(/\bethereum Classic\b/g, "Shitcoin #16");
+  v = v.replace(/\bethereum classic\b/g, "Shitcoin #16");
+  v = v.replace(/\bEthereum classic\b/g, "Shitcoin #16");
   v = v.replace(/\bETH\b/g, "Shitcoin #1");
   v = v.replace(/\bEthereum\b/g, "Shitcoin #1");
   v = v.replace(/\bethereum\b/g, "shitcoin #1");
@@ -53,17 +59,13 @@ function replaceText(v) {
   v = v.replace(/\bMonero\b/g, "shitcoin #11");
   v = v.replace(/\bmonero\b/g, "shitcoin #11");
   v = v.replace(/\bDASH\b/g, "Shitcoin #12");
+  v = v.replace(/\bDash\b/g, "Shitcoin #12");
   v = v.replace(/\bNEO\b/g, "Shitcoin #13");
   v = v.replace(/\bNeo\b/g, "shitcoin #13");
   v = v.replace(/\bIOTA\b/g, "Shitcoin #14");
   v = v.replace(/\bMIOTA\b/g, "shitcoin #14");
   v = v.replace(/\bCosmos\b/g, "Shitcoin #15");
   v = v.replace(/\bATOM\b/g, "shitcoin #15");
-  v = v.replace(/\bETC\b/g, "Shitcoin #16");
-  v = v.replace(/\bEthereum Classic\b/g, "Shitcoin #16");
-  v = v.replace(/\bethereum Classic\b/g, "Shitcoin #16");
-  v = v.replace(/\bethereum classic\b/g, "Shitcoin #16");
-  v = v.replace(/\bEthereum classic\b/g, "Shitcoin #16");
   v = v.replace(/\bNEM\b/g, "Shitcoin #17");
   v = v.replace(/\bXEM\b/g, "Shitcoin #17");
   v = v.replace(/\bONT\b/g, "Shitcoin #18");
